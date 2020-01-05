@@ -47,12 +47,12 @@ def mathan(message):
         bot.send_message(message.chat.id, 'Вот материал для первого семестра:', reply_markup=hideBoard)
         bot.send_chat_action(message.chat.id, 'typing')
         time.sleep(0.3)
+        doc = open('D://Programms/Zorich1.pdf', 'rb')
+        bot.send_document(message.chat.id, doc)
     if text == 'Второй семестр':
         bot.send_message(message.chat.id, 'Вот материал для второго семестра:', reply_markup=hideBoard)
         bot.send_chat_action(message.chat.id, 'typing')
         time.sleep(0.3)
-        doc = open('C://temp/Text.txt', 'rb')
-        bot.send_document(message.chat.id, doc)
     if text == 'Третий семестр':
         bot.send_message(message.chat.id, 'Вот материал для третьего семестра:', reply_markup=hideBoard)
         bot.send_chat_action(message.chat.id, 'typing')
